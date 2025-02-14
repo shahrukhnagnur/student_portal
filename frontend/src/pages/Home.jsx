@@ -20,7 +20,7 @@ const Home = () => {
   const fetchStudents = async () => {
     try {
       const token = localStorage.getItem("token");
-      const response = await axios.get("http://localhost:5000/api/students/all", {
+      const response = await axios.get("https://student-portal-backend-nzys.onrender.com/api/students/all", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setStudents(response.data);
@@ -43,7 +43,7 @@ const Home = () => {
     if (window.confirm("Are you sure you want to delete this student?")) {
       try {
         const token = localStorage.getItem("token");
-        await axios.delete(`http://localhost:5000/api/students/delete/${id}`, {
+        await axios.delete(`https://student-portal-backend-nzys.onrender.com/api/students/delete/${id}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         fetchStudents();
