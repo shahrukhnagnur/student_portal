@@ -17,7 +17,7 @@ const Signup = () => {
     setSuccess('');
 
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/signup', {
+      const response = await axios.post('https://student-portal-backend-nzys.onrender.com/api/auth/signup', {
         name,
         email,
         password,
