@@ -1,0 +1,28 @@
+body {
+  background: linear-gradient(to right, #1a1a1a, #cccccc, #ffffff);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+    border-radius: 8px;
+  }
+  
