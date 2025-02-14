@@ -37,12 +37,12 @@ const StudentForm = ({ fetchStudents, closeModal, selectedStudent }) => {
 
       if (selectedStudent) {
         await axios.put(
-          `http://localhost:5000/api/students/update/${selectedStudent._id}`,
+          `https://student-portal-backend-nzys.onrender.com/api/students/update/${selectedStudent._id}`,
           studentData,
           config
         );
       } else {
-        await axios.post("http://localhost:5000/api/students/add", studentData, config);
+        await axios.post("https://student-portal-backend-nzys.onrender.com/api/students/add", studentData, config);
       }
 
       fetchStudents();
