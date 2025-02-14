@@ -16,7 +16,7 @@ const Login = ({ setIsAuthenticated }) => {
     setSuccess('');
 
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/login', {
+      const response = await axios.post('https://student-portal-backend-nzys.onrender.com/api/auth/login', {
         email,
         password,
       });
