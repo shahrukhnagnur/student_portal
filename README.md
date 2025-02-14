@@ -31,8 +31,8 @@ Installation & Setup
 
 1️⃣ Clone the Repository
 
-git clone https://github.com/yourusername/student-management.git
-cd student-management
+git clone https://github.com/yourusername/student_portal.git
+cd student_portal
 
 2️⃣ Backend Setup
 
